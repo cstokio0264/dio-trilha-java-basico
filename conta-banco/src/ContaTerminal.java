@@ -11,8 +11,8 @@ public class ContaTerminal {
 
         Scanner terminal = new Scanner(System.in);
 
-        System.out.print("Digite o número do Banco com quatro numeros 'XXXX': ");
-        int numBanco = terminal.nextInt();
+        System.out.print("Digite o número da Conta com quatro digitos 'XXXX': ");
+        int numConta = terminal.nextInt();
 
         System.out.print("Digite o número da sua Agência 'XXX-X': ");
         String numAgencia = terminal.next();
@@ -27,7 +27,7 @@ public class ContaTerminal {
         double saldo = terminal.nextDouble();
         System.out.print("******************************** Banco Java ********************************");
         System.out.printf("\nOlá " + nomeCliente + ", obrigado por criar uma conta em nosso banco,\n" +
-                "sua agência é " + numAgencia + ", conta " + numBanco + " e " +
+                "sua agência é " + numAgencia + ", conta " + numConta + " e " +
                 "seu saldo atual é R$%.2f \nO valor está disponível para saque.%n", saldo);
     }
 }
